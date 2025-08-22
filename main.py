@@ -416,7 +416,7 @@ def delete_assignment(assignment_id: int):
         return
 
 # ---------------- Submissions ----------------
-@app.post("/submissions", response_model=SubmissionOut, status_code=status.HTTP_201_CREATED)
+# @app.post("/submissions", response_model=SubmissionOut, status_code=status.HTTP_201_CREATED)
 # def create_submission(payload: SubmissionCreate):
 #     with get_conn() as con:
 #         try:
@@ -549,3 +549,4 @@ def delete_announcement(announcement_id: int):
         cur = con.execute("DELETE FROM Announcements WHERE id=?", (announcement_id,))
         if cur.rowcount == 0: raise HTTPException(404, "Announcement not found")
         return
+
