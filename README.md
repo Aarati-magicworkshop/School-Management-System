@@ -21,7 +21,7 @@ python datapopulate.py
 - To run the CRUD operations
 ```python
 python managementCrud.py
-python python managementCrud.py reset    # (optional) rebuilds DB by calling  managementSchema.py first
+python managementCrud.py reset    # (optional) rebuilds DB by calling  managementSchema.py first
 ```
 - To create FastAPI app for the LMS schema created by managementSchema.py.
 ```python
